@@ -1,3 +1,7 @@
+### data file
+
+db/data
+
 ### temp server for x-origin ###
 server.js
 
