@@ -16,14 +16,11 @@
   ng-pattern="/^(\d+\.?\d*|\.\d+)$/" ng-class="{'has-error': sendForm.amount.$invalid && !sendForm.amount.$pristine}" required>
 
 
-
 </form>
-<!-- <button ng-if="!confirmed" id="send" class="sendViewButton sendButton" ng-click="sendForm.$valid && morph();">Send</button> -->
+<button ng-if="!confirmed" id="send" class="sendViewButton sendButton" ng-click="sendForm.$valid && morph();">Send</button>
 
-<button ng-if="!confirmed" id="send" class="sendViewButton sendButton" ng-click="morph();">Send</button>
-
-<button ng-init="confirmed=false" ng-if="confirmed" class="sendViewButton morphButton send-confirm"  ng-click="sendPayment(); morph();">confirm</button>
-<button ng-init="confirmed=false" ng-if="confirmed" class="sendViewButton morphButton send-cancel" ng-click="clearAmount(); morph();">cancel</button>
+<button ng-init="confirmed=false" ng-if="confirmed" class="sendViewButton morphButton send-confirm"  ng-click="sendPayment(); morph();">Confirm</button>
+<button ng-init="confirmed=false" ng-if="confirmed" class="sendViewButton morphButton send-cancel" ng-click="clearAmount(); morph();">Cancel</button>
 
 
 
