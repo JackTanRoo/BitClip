@@ -18,14 +18,12 @@ angular.module('bitclip.sendController', [
 
     Utilities.isMainNet().then(function(isMainNet){
       $scope.network = isMainNet;
-    })
+    });
 
     //TODO: sendPayment Functionality
     $scope.sendPayment = function() {
-      console.log("invoking sendPayment: ", $scope.transactionDetails);
       Utilities.isMainNet().then(function(isMainNet){
         Utilities.getCurrentPrivateKey().then(function(currentPrivateKey){
-          console.log("currentPrivateKey: ", currentPrivateKey);
           TxBuilder.sendTransaction(currentPrivateKey, $scope.transactionDetails, isMainNet).then(function(message){
             $scope.txSuccessMessage = message;
             $scope.$apply();
