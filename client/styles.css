@@ -111,31 +111,31 @@ i.fa-usd {
     font-weight: 700;
   }
 
-  .optionsNav > i {
-    z-index: 1000;
-    position: fixed;
-    right: 10px;
-    top: 7px;
-    cursor: pointer; cursor: hand;
-  }
+.optionsNav > i {
+  z-index: 6;
+  position: fixed;
+  right: 10px;
+  top: 7px;
+  cursor: pointer; cursor: hand;
+}
 
-  .optionsNav > ul.dropdown-menu {
-    position: fixed;
-    list-style-type: none;
-    width: 108px;
-    height: 108px;
-    right: 6px;
-    top: 3px;
-    background-color: white;
-    z-index: 999;
-    box-sizing: border-box;
-    padding: 5px;
-    border: 1px solid #F1A533;
-    border-radius: 2px;
-    border-top-right-radius: 10px;
-    margin: 0;
-    font-size: 1rem;
-  }
+.optionsNav > ul.dropdown-menu {
+  position: fixed;
+  list-style-type: none;
+  width: 108px;
+  height: 108px;
+  right: 6px;
+  top: 3px;
+  background-color: white;
+  z-index: 5;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #F1A533;
+  border-radius: 2px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  font-size: 1rem;
+}
 
   .optionsNav > ul.dropdown-menu > li:first-child {
     color: #0B0B0B;
@@ -177,7 +177,7 @@ anywhere outside of the dropdown */
 .optionsOffclick {
   position:absolute;
   background-color: transparent;
-  z-index: 997;
+  z-index: 4;
   
   /*back up width/height for unsupported browsers*/
   width:360px; 
@@ -415,7 +415,7 @@ input.hasTimedError {
   font-weight: 700;
   /*font-size: 0.9em;*/
   bottom: 0.5%;
-  z-index: 21000;
+  z-index: 2;
 }
 
 .send-confirm {
@@ -452,7 +452,7 @@ input.hasTimedError {
 
   background-color: #35A5A7;
   color: white;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .errorMessagePopup {
@@ -510,13 +510,13 @@ input.hasTimedError {
   right:0;
   background-color: rgba(11, 11, 11, 0.6);
   opacity: .5;
-  z-index: 2;
+  z-index: 8;
 }
 .loaderAnimation {
-  z-index: 3;
+  z-index: 9;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   margin-left: -27.5px;
   margin-top: -27.5px;
 }
@@ -531,8 +531,8 @@ input.hasTimedError {
   margin-top: 5px;
   position: relative;
   opacity: 0;
-  -webkit-animation: enter 6s infinite;
-  animation: enter 6s infinite;
+  -webkit-animation: enter 3s infinite;
+  animation: enter 3s infinite;
 }
 
 .enter {
@@ -541,44 +541,17 @@ input.hasTimedError {
 }
 
 .square:nth-child(1) {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
 }
 
 .square:nth-child(2) {
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+  -webkit-animation-delay: .33s;
+  animation-delay: .33s;
 }
 
 .square:nth-child(3) {
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;
+  -webkit-animation-delay: .66s;
+  animation-delay: .66s;
   background: #F1A533;
-}
-
-.square:nth-child(4) {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.square:nth-child(5) {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.square:nth-child(6) {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.square:nth-child(8) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.square:nth-child(9) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
 }
 
 .clear {
