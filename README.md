@@ -11,15 +11,6 @@ We got tired of clunky wallets with a bazillion form fields. BitClip is built to
   - Encrypted propagation of transactions through HelloBlock API
   - Testnet support (Testnet addresses come preloaded with Bitcoins)
 
-Soon to be released:
-  - Backup wallet
-  - Import/Export address-key pairs
-
-## Team
-
-  - __Product Owner__: Jack Tan Lu
-  - __Scrum Master__: Etienne Tripier
-  - __Development Team Members__: Austin Connelly, Issaq Al-Ahmed
 
 ## Table of Contents
 
@@ -35,25 +26,11 @@ Soon to be released:
 4. [Team](#team)
 5. [Contributing](#contributing)
 
-## Download Working Copy
-
-#### Download BitClip and try it out [here](https://chrome.google.com/webstore/detail/bitclip/ijmpgkjfkbfhoebgogflfebnmejmfbml "BitClip - Chrome Store").
-
 
 Transactions made easy         |Manage Multiple Addresses      
 :-----------------------------:|:-----------------------------:
 ![Transaction History](/../screenshots/screenshots/bitclip_SendView_1.png?raw=true "Send Bitcoin")  |  ![Manage addresses](/../screenshots/screenshots/bitclip_ReceiveView_1.png?raw=true "Manage addresses") 
 
-
-## Requirements
-
-- BitcoinJS 1.0.2
-- HelloBlock 1.0.0
-- AngularJS ~1.2.25,
-- Nvd3 ~1.1.15-beta,
-- ngFx ~1.0.4
-
-## Development
 
 ### Installing Dependencies
 
@@ -73,10 +50,8 @@ bower install
 
 3. Click Load unpacked extension to pop up a file-selection dialog.
 
-4. Navigate to the 'client' directory of BitClip (path/BitClip_Directory/client)
+4. Navigate to the 'client' directory of BitClip
 
 5. Click Select on 'client' directory, and BitClip will be loaded into your Browser.
 
 ## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
