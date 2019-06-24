@@ -1,4 +1,5 @@
 angular.module('bitclip', [
+  "ngRoute",
   'ui.router',
   'ngFx',
   'bitclip.headerController',
