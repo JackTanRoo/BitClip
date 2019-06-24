@@ -12,7 +12,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "angular": "~1.2.25",
+    "angular": "1.7.8",
     "angular-route": "^1.2.18",
     "angular-mocks": "^1.2.18",
     "angular-ui-router": "~0.2.11",
@@ -25,6 +25,7 @@
     "ngFx": "~1.0.4"
   },
   "resolutions": {
-    "d3": "~3.4.11"
+    "d3": "~3.4.11",
+    "angular": "1.7.8"
   }
 }
