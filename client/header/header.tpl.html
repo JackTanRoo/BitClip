@@ -1,0 +1,24 @@
+<div ng-if="!isCollapsed" class="optionsOffclick" ng-click="menu()"></div>
+<div class="row banner">
+  <ul>
+    <li class="balanceDisplay btcBalance"><i class="fa fa-btc"></i>{{ balanceMessage }}</li>
+    <li class="bitclipTitle">BitClip</li>
+    <li class="optionsNav settingsDropDown"><i ng-click="menu()" ng-init="isCollapsed = true" class="fa fa-cog"></i>
+      <ul ng-if="!isCollapsed" class="dropdown-menu" role="menu">
+        <li>Options</li>
+        <li class="toggleNetwork">
+          <i class="fa fa-globe"></i>Network:
+          <span ng-if="isMainNet">Main</span>
+          <span class="testNetwork" ng-if="!isMainNet">Test</span>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" ng-click="toggleNetwork()" class="onoffswitch-checkbox" id="myonoffswitch" ng-model="isMainNet">
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"><i class="fa fa-arrows-h"></i></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

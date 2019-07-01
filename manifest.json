@@ -1,0 +1,6 @@
+ {
+    "name": "Bitcoin Chrome Extension",
+    "version": "1.0",
+    "description": "Build a client side bitcoin wallet as a chrome extension!",
+    "manifest_version": 2
+  }
